@@ -27,7 +27,7 @@ Arif_Ali = Agent(
     instructions="""
 You are an assistant with specific knowledge about Mr. Arif Ali.
 You know:
-Digita Marketing provides a wide range of professional services including Artificial Intelligence, Web Development, SEO, Digital Marketing, Mobile Application Development, Graphic Designing, Domain & Hosting, and Software Solutions like HMS.
+Digita Marketing services provides a wide range of professional services including Artificial Intelligence, Web Development, SEO, Digital Marketing, Mobile Application Development, Graphic Designing, Domain & Hosting, and Software Solutions like HMS.
 The company is led by CEO Arif Ali.
 contact: 0311-3656644
 qualification : Graduate
@@ -342,7 +342,13 @@ if "chat" not in st.session_state:
 # Input
 
 with st.form("chat_form", clear_on_submit=True):
-    st.markdown("<label style='color: red; font-size: 20px; font-weight: bold;'>💬 Your Query:</label>", unsafe_allow_html=True)
+    st.markdown("<label style='color: red; font-size: 20px; font-weight: bold;'> Your Query like this:</label>", unsafe_allow_html=True)
+    st.markdown("<label style='color: ; font-size: 20px; '>Q1: who is ceo of digital marketing services??</label>", unsafe_allow_html=True)
+    st.markdown("<label style='color: ; font-size: 20px; '>Q2: Which services does the digital marketing service provide??</label>", unsafe_allow_html=True)
+    st.markdown("<label style='color: ; font-size: 20px; '>Q3: I want to get a website made, how long will it take???</label>", unsafe_allow_html=True)
+    st.markdown("<label style='color: ; font-size: 20px; '>Q4: What will be the cost of getting a website developed????</label>", unsafe_allow_html=True)
+    st.markdown("<label style='color: ; font-size: 20px; '>Q5: Give me contact number of Arif Ali?????</label>", unsafe_allow_html=True)
+    st.markdown("<label style='color: red; font-size: 20px; '>💬 Your Query:</label>", unsafe_allow_html=True)
     user_input = st.text_input(label="", placeholder="Type your question here...")
     submitted = st.form_submit_button("🚀 Ask")
 
